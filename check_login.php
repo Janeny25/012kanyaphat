@@ -18,11 +18,13 @@ if($result->num_rows > 0){
             $_SESSION['users_id'] = $row['users_id'];
 
             echo "Login Success";
-            header("Location: index.php");
+            header("Location: home.php");
 
         }
         else{
-            echo "Password Incorrect";
+            echo "<h1 style='color: red;'>Password is incorrect</h1>";
+            //cooldown time
+            header("refresh: 2; url=login.php");
         }
     }
 
