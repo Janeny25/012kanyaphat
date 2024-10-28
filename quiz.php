@@ -8,8 +8,6 @@ if (!isset($_SESSION['users_id'])) {
     header('Location: login.php');
     exit();
 }
-
-
 $user_id = $_SESSION['users_id'];
 
 
@@ -37,7 +35,6 @@ if ($result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMp5b6hP8Q2e6y3g5O8f8fU9qPwh4V9HzD81w5m" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
@@ -47,7 +44,6 @@ if ($result->num_rows > 0) {
     <div class="d-flex">
 
         <div class="content">
-
             <div class="row">
                 <div class="col-lg-5 mx-auto">
                     <div class="card">
@@ -320,13 +316,15 @@ if ($result->num_rows > 0) {
 
             <div class="row">
                 <div class="col-lg-1 mx-auto">
-                    <button type="submit" class="btn mb-3 mt-3 btn-answer">ส่งคำตอบ</button>   
+                    <button type="submit" id="submit-quiz" class="btn mb-3 mt-3 btn-answer">ส่งคำตอบ</button>   
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/quiz.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

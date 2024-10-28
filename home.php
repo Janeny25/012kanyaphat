@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
 
     <div class="d-flex">
         <nav class="sidebar flex-shrink-0 p-3">
-            <h4 class="text-white text-center">Home</h4>
+            <h4 class="text-center text-dark">KANYAPHAT</h4>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-users"></i> <?php echo $user["users_name"] ?></a>
@@ -62,8 +62,8 @@ if ($result->num_rows > 0) {
                     <a href="quiz.php" style="text-decoration: none;">
                         <div class="card-home mb-4">
                             <div class="card-body">
-                                <h5 class="card-title">แบบสอบถาม ..........................</h5>
-                                <p class="card-text">..................................</p>
+                                <h5 class="card-title">แบบสอบถามอาหารแบบไหนเหมาะกับคุณ</h5>
+                                <p class="card-text">แบบสอบถามนี้จะแนะนำอาหารที่หลากหลายตามรสนิยมของคุณ</p>
                             </div>
                         </div>
                     </a>
