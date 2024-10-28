@@ -27,7 +27,7 @@
             </div>
 
             <button type="submit" class="btn btn-jannnn">เข้าสู่ระบบ</button>
-            <p class="text-center pt-2">สมัครสมาชิก <a href="#">สร้างบัญชี!!</a></p>
+            <p class="text-center pt-2">สมัครสมาชิก <a href="regis.php">สร้างบัญชี!!</a></p>
         </form>
         </div>
         
