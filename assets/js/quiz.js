@@ -27,16 +27,16 @@ $(document).ready(function() {
             if (answer) {
                 results.push("คำถาม " + i + ": " + answer);
                 switch (answer) {
-                    case "pound":
+                    case "a":
                         foodPreferences.pound++;
                         break;
-                    case "grill":
+                    case "b":
                         foodPreferences.grill++;
                         break;
-                    case "boil":
+                    case "c":
                         foodPreferences.boil++;
                         break;
-                    case "fry":
+                    case "d":
                         foodPreferences.fry++;
                         break;
                     // สามารถเพิ่มแนวอื่นๆ ตามความต้องการได้ ตัวอย่างการใส่ code แนวอื่นๆ ด้านล่าง โดยให้คะแนนเริ่มต้นเป็น 0 ดังนี้
