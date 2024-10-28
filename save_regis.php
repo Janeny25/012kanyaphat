@@ -42,6 +42,7 @@ VALUE ('$prefix' , '$firstName' , '$lastName' ,
 
 if($conn->query($sql)===TRUE){
     echo "บันทึกสำเร็จ";
+    header("Location: login.php");
 }else{
     echo "บันทึกข้อมูลมีปัญหากรุณาติดต่อ Admin";
 }
