@@ -27,12 +27,12 @@ if($result->num_rows > 0){
             header("refresh: 2; url=login.php");
         }
     }
-    else{
-        echo "<h1 style='color: red;'>Email is incorrect</h1>";
-        //cooldown time as well
-        header("refresh: 2; url=login.php");
-    }
 
+}
+else{
+    echo "<h2 style='color: red;'>Email is incorrect</h2>";
+    //cooldown time
+    header("refresh: 2; url=login.php");
 }
 
 
