@@ -93,6 +93,10 @@ $(document).ready(function() {
                         choices: choices
                     }
                 });
+
+
+                //redirect to index.php
+                window.location.href = "home.php";
             }
         });
 
