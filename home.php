@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
 
     <div class="d-flex">
         <nav class="sidebar flex-shrink-0 p-3">
-            <h4 class="text-center text-dark">KANYAPHAT</h4>
+        <a style="text-decoration: none;" href="home.php"><h4 class="text-center text-dark">KANYAPHAT</h4></a>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link" href="profile.php"><i class="fa-regular fa-user"></i> <?php echo $user["users_name"] ?></a>

@@ -45,10 +45,10 @@ if ($result->num_rows > 0) {
 
     <div class="d-flex">
         <nav class="sidebar flex-shrink-0 p-3">
-            <h4 class="text-center text-dark">KANYAPHAT</h4>
+        <a class="" style="text-decoration: none;" href="home.php"><h4 class="text-center text-dark">KANYAPHAT</h4></a>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa-regular fa-user"></i> <?php echo $user["users_name"] ?></a>
+                    <a class="nav-link" href="home.php"><i class="fa-regular fa-user"></i> <?php echo $user["users_name"] ?></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
