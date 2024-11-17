@@ -44,9 +44,13 @@ if($conn->query($sql)===TRUE){
     echo "บันทึกสำเร็จ";
     header("Location: login.php");
 }else{
+     //cooldown time
+     header("refresh: 2; url=regis.php");
     echo "บันทึกข้อมูลมีปัญหากรุณาติดต่อ Admin";
 }
 }else{
+    //cooldown time
+    header("refresh: 2; url=regis.php");
     echo "E-mail ที่ใช้สมัครซ้ำกับข้อมูลที่มี";
 }
 ?>
