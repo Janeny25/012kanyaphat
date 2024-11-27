@@ -7,6 +7,6 @@ session_unset();
 session_destroy();
 
 // เปลี่ยนเส้นทางไปยังหน้าหลักหรือหน้าล็อกอินหลังจากออกจากระบบ
-header("Location: login.php");
+header("Location: index.php");
 exit();
 ?>
